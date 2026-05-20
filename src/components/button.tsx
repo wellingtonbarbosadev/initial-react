@@ -1,3 +1,7 @@
-export function Button() {
-  return <button>Clique Aqui</button>;
+type Props = {
+  name: string;
+};
+
+export function Button(props: Props) {
+  return <button>{props.name}</button>;
 }
